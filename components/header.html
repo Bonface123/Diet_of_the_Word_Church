@@ -1,0 +1,60 @@
+<header class="w-full font-[Poppins]">
+  <!-- Top Bar -->
+  <div class="bg-sky-100 text-gray-700 text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:justify-between">
+      <span class="w-full text-center md:text-left">Welcome to Diet of the Word International Church – Kibera, Nairobi</span>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2">
+        <img src="/assets/images/logo.png" alt="Church Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex gap-6 lg:gap-8 mx-auto">
+        <li><a href="/" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Home</a></li>
+        <li><a href="/about" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">About Us</a></li>
+        <li><a href="/leadership" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Leadership</a></li>
+        <li><a href="/sermons" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Sermons</a></li>
+        <li><a href="/devotions" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Devotions</a></li>
+        <li><a href="/events" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Events</a></li>
+        <li><a href="/gallery" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Gallery</a></li>
+        <li><a href="/ministries" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Ministries</a></li>
+        <li><a href="/giving" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Giving</a></li>
+        <li><a href="/contact" class="text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition">Contact</a></li>
+      </ul>
+      <!-- Give Button (Desktop) -->
+      <div class="hidden md:block ml-4">
+        <a href="/giving" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow transition">Give</a>
+      </div>
+      <!-- Hamburger (Mobile) -->
+      <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Open menu" type="button">
+        <svg class="h-7 w-7 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 shadow-inner">
+      <ul class="flex flex-col py-2 px-4 gap-2">
+        <li><a href="/" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="/about" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">About Us</a></li>
+        <li><a href="/leadership" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Leadership</a></li>
+        <li><a href="/sermons" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Sermons</a></li>
+        <li><a href="/devotions" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Devotions</a></li>
+        <li><a href="/events" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Events</a></li>
+        <li><a href="/gallery" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Gallery</a></li>
+        <li><a href="/ministries" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Ministries</a></li>
+        <li><a href="/giving" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Giving</a></li>
+        <li><a href="/contact" class="block py-2 text-gray-700 hover:text-blue-700 uppercase tracking-wide font-semibold transition" onclick="closeMobileMenu()">Contact</a></li>
+        <li class="pt-2">
+          <a href="/giving" class="w-full block text-center bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow transition" onclick="closeMobileMenu()">Give</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Placeholder for JS: mobile menu toggle logic to be handled in components.js -->
+</header>
