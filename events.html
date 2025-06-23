@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Diet of the Word International Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              700: '#800080',
+              900: '#4B004B'
+            },
+            sky: {
+              100: '#E0F7FF',
+              600: '#039BE5',
+              700: '#0369A1'
+            },
+            pink: {
+              500: '#FFC0CB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-family: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <div id="header"></div>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[40vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/images/hero/events-hero.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-5xl font-bold text-white text-center">Upcoming Events</h1>
+        <p class="text-xl text-white text-center mt-2">Stay connected with our church family through events and gatherings.</p>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="bg-white py-6 px-6 md:px-20">
+      <form class="flex flex-col sm:flex-row gap-4 justify-start items-start sm:items-center">
+        <select class="border border-gray-300 rounded px-4 py-2 w-full md:w-56">
+          <option>All Ministries</option>
+          <option>Youth</option>
+          <option>Sunday School</option>
+          <option>Women</option>
+          <option>Men</option>
+          <option>Elders</option>
+        </select>
+        <input type="date" class="border border-gray-300 rounded px-4 py-2 w-full md:w-56" />
+        <input type="text" placeholder="Search by event title" class="border border-gray-300 rounded px-4 py-2 flex-1 w-full" />
+        <button type="submit" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded font-semibold transition-all duration-300 w-full sm:w-auto">Filter</button>
+      </form>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="bg-gray-50 py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-purple-800 text-center mb-12">Church Events & Programs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- Event Card 1 -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden flex flex-col">
+          <img src="/assets/images/events/youth-conference.jpg" alt="Youth Conference" class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs">Youth</span>
+            </div>
+            <h3 class="text-xl font-semibold text-purple-800 mt-2">Youth Conference 2025</h3>
+            <div class="text-sm text-gray-600 mt-1">Saturday, July 12, 2025</div>
+            <div class="text-sm text-gray-600">9:00am – 4:00pm</div>
+            <div class="text-sm text-gray-600 mb-2">Main Sanctuary, Kibera</div>
+            <p class="text-gray-700 text-sm mb-4">A day of worship, workshops, and fellowship for all youth. Special guest speakers and music ministry.</p>
+            <a href="#" class="bg-purple-700 text-white px-4 py-2 rounded mt-4 w-fit hover:bg-purple-800 font-semibold transition-all duration-300">RSVP</a>
+          </div>
+        </div>
+        <!-- Event Card 2 -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden flex flex-col">
+          <img src="/assets/images/events/womens-retreat.jpg" alt="Women's Retreat" class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs">Women</span>
+            </div>
+            <h3 class="text-xl font-semibold text-purple-800 mt-2">Women's Retreat</h3>
+            <div class="text-sm text-gray-600 mt-1">Friday, August 8, 2025</div>
+            <div class="text-sm text-gray-600">5:00pm – 8:00pm</div>
+            <div class="text-sm text-gray-600 mb-2">Prayer Garden, Kibera</div>
+            <p class="text-gray-700 text-sm mb-4">A refreshing evening of prayer, teaching, and connection for women of all ages. Register early!</p>
+            <a href="#" class="bg-purple-700 text-white px-4 py-2 rounded mt-4 w-fit hover:bg-purple-800 font-semibold transition-all duration-300">RSVP</a>
+          </div>
+        </div>
+        <!-- Event Card 3 -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden flex flex-col">
+          <img src="/assets/images/events/sunday-school-fun.jpg" alt="Sunday School Fun Day" class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs">Sunday School</span>
+            </div>
+            <h3 class="text-xl font-semibold text-purple-800 mt-2">Sunday School Fun Day</h3>
+            <div class="text-sm text-gray-600 mt-1">Sunday, July 20, 2025</div>
+            <div class="text-sm text-gray-600">11:00am – 2:00pm</div>
+            <div class="text-sm text-gray-600 mb-2">Church Grounds, Kibera</div>
+            <p class="text-gray-700 text-sm mb-4">Games, Bible stories, and snacks for all children. Parents and guardians welcome to join!</p>
+            <a href="#" class="bg-purple-700 text-white px-4 py-2 rounded mt-4 w-fit hover:bg-purple-800 font-semibold transition-all duration-300">RSVP</a>
+          </div>
+        </div>
+        <!-- Event Card 4 -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden flex flex-col">
+          <img src="/assets/images/events/men-breakfast.jpg" alt="Men's Breakfast" class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs">Men</span>
+            </div>
+            <h3 class="text-xl font-semibold text-purple-800 mt-2">Men's Breakfast</h3>
+            <div class="text-sm text-gray-600 mt-1">Saturday, August 16, 2025</div>
+            <div class="text-sm text-gray-600">7:30am – 10:00am</div>
+            <div class="text-sm text-gray-600 mb-2">Fellowship Hall, Kibera</div>
+            <p class="text-gray-700 text-sm mb-4">A time for men to connect, share, and grow in faith over a hearty breakfast. All men invited!</p>
+            <a href="#" class="bg-purple-700 text-white px-4 py-2 rounded mt-4 w-fit hover:bg-purple-800 font-semibold transition-all duration-300">RSVP</a>
+          </div>
+        </div>
+        <!-- Event Card 5 -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden flex flex-col">
+          <img src="/assets/images/events/elders-prayer.jpg" alt="Elders' Prayer Night" class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs">Elders</span>
+            </div>
+            <h3 class="text-xl font-semibold text-purple-800 mt-2">Elders' Prayer Night</h3>
+            <div class="text-sm text-gray-600 mt-1">Friday, July 25, 2025</div>
+            <div class="text-sm text-gray-600">6:00pm – 9:00pm</div>
+            <div class="text-sm text-gray-600 mb-2">Upper Room, Kibera</div>
+            <p class="text-gray-700 text-sm mb-4">A special night of intercession and worship led by the elders. Open to all church members.</p>
+            <a href="#" class="bg-purple-700 text-white px-4 py-2 rounded mt-4 w-fit hover:bg-purple-800 font-semibold transition-all duration-300">RSVP</a>
+          </div>
+        </div>
+        <!-- Event Card 6 -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden flex flex-col">
+          <img src="/assets/images/events/church-anniversary.jpg" alt="Church Anniversary" class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs">All Ministries</span>
+            </div>
+            <h3 class="text-xl font-semibold text-purple-800 mt-2">Church Anniversary Celebration</h3>
+            <div class="text-sm text-gray-600 mt-1">Sunday, September 7, 2025</div>
+            <div class="text-sm text-gray-600">10:00am – 1:00pm</div>
+            <div class="text-sm text-gray-600 mb-2">Main Sanctuary, Kibera</div>
+            <p class="text-gray-700 text-sm mb-4">Join us as we celebrate another year of God's faithfulness with worship, testimonies, and fellowship for all ages.</p>
+            <a href="#" class="bg-purple-700 text-white px-4 py-2 rounded mt-4 w-fit hover:bg-purple-800 font-semibold transition-all duration-300">RSVP</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="flex justify-center mt-8">
+        <button class="px-4 py-2 mx-1 bg-gray-200 hover:bg-gray-300 rounded">Previous</button>
+        <button class="px-4 py-2 mx-1 bg-purple-700 text-white rounded hover:bg-purple-800">Next</button>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="js/components.js"></script>
+</body>
+</html> 

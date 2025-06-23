@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sermons & Teachings | Diet of the Word International Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              700: '#800080',
+              900: '#4B004B'
+            },
+            sky: {
+              100: '#E0F7FF',
+              600: '#039BE5'
+            },
+            pink: {
+              500: '#FFC0CB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-family: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <div id="header"></div>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[40vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/images/hero/sermons-hero.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-wide">Sermons & Teachings</h1>
+        <p class="mt-4 text-lg md:text-2xl text-white font-light tracking-wide">Faith comes by hearing, and hearing by the Word of God.</p>
+      </div>
+    </section>
+
+    <!-- Search/Filter Bar (UI only) -->
+    <section class="bg-white py-6 px-4 md:px-24 shadow-sm">
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-4">
+        <input type="text" placeholder="Search sermons, topics, or speakers..." class="flex-1 border border-gray-300 rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-purple-700 text-lg" />
+        <select class="border border-gray-300 rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-purple-700 text-lg">
+          <option value="">All Categories</option>
+          <option value="sermon">Sermons</option>
+          <option value="devotion">Devotions</option>
+          <option value="teaching">Teachings</option>
+        </select>
+        <button class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 w-full md:w-auto">Search</button>
+      </div>
+    </section>
+
+    <!-- Sermons Grid Section -->
+    <section class="py-16 px-4 md:px-24">
+      <h2 class="text-2xl font-bold text-center mb-10 text-purple-900">Recent Sermons</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <!-- Sermon Card Example -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all flex flex-col">
+          <img src="/assets/images/sermons/sermon1.jpg" alt="Walking in the Light" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-lg font-semibold text-purple-800 mb-1">Walking in the Light</div>
+            <div class="text-sm text-gray-500 mb-2">Bishop John Doe • June 2024</div>
+            <div class="text-gray-700 text-sm mb-4 line-clamp-3">Discover how the Word guides us through every season of life. A message of hope and direction for all generations.</div>
+            <a href="#" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded mt-auto text-center font-semibold transition-all duration-300">Watch</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all flex flex-col">
+          <img src="/assets/images/sermons/sermon2.jpg" alt="Faith That Moves" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-lg font-semibold text-purple-800 mb-1">Faith That Moves</div>
+            <div class="text-sm text-gray-500 mb-2">Bishop John Doe • May 2024</div>
+            <div class="text-gray-700 text-sm mb-4 line-clamp-3">A devotion on trusting God's promises and stepping out in faith, even when the way is unclear.</div>
+            <a href="#" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded mt-auto text-center font-semibold transition-all duration-300">Watch</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all flex flex-col">
+          <img src="/assets/images/sermons/sermon3.jpg" alt="Rooted in Christ" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-lg font-semibold text-purple-800 mb-1">Rooted in Christ</div>
+            <div class="text-sm text-gray-500 mb-2">Pastor Mary Wanjiku • April 2024</div>
+            <div class="text-gray-700 text-sm mb-4 line-clamp-3">Explore the importance of spiritual roots and growing deeper in Christ as a community.</div>
+            <a href="#" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded mt-auto text-center font-semibold transition-all duration-300">Watch</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all flex flex-col">
+          <img src="/assets/images/sermons/sermon4.jpg" alt="The Power of Prayer" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-lg font-semibold text-purple-800 mb-1">The Power of Prayer</div>
+            <div class="text-sm text-gray-500 mb-2">Pastor James Otieno • March 2024</div>
+            <div class="text-gray-700 text-sm mb-4 line-clamp-3">A teaching on the role of prayer in the life of a believer and the church.</div>
+            <a href="#" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded mt-auto text-center font-semibold transition-all duration-300">Watch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Devotions & Teachings Section -->
+    <section class="py-16 px-4 md:px-24 bg-purple-50">
+      <h2 class="text-2xl font-bold text-center mb-10 text-purple-900">Devotions & Teachings</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Devotion Card Example -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all flex flex-col">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-lg font-semibold text-purple-800 mb-1">Daily Bread: Abiding in Christ</div>
+            <div class="text-sm text-gray-500 mb-2">Bishop John Doe • June 2024</div>
+            <div class="text-gray-700 text-sm mb-4 line-clamp-3">A short devotion on remaining connected to Jesus, the true vine, and bearing fruit in every season.</div>
+            <a href="#" class="bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded mt-auto text-center font-semibold transition-all duration-300">Read</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all flex flex-col">
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-lg font-semibold text-purple-800 mb-1">Teaching: The Armor of God</div>
+            <div class="text-sm text-gray-500 mb-2">Elder Peter Mwangi • May 2024</div>
+            <div class="text-gray-700 text-sm mb-4 line-clamp-3">A teaching on Ephesians 6 and how believers can stand strong in spiritual warfare.</div>
+            <a href="#" class="bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded mt-auto text-center font-semibold transition-all duration-300">Read</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="js/components.js"></script>
+</body>
+</html> 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Diet of the Word International Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              700: '#800080',
+              900: '#4B004B'
+            },
+            sky: {
+              100: '#E0F7FF',
+              600: '#039BE5',
+              700: '#0369A1'
+            },
+            pink: {
+              500: '#FFC0CB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-family: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <div id="header"></div>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[40vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/images/hero/gallery-hero.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-5xl font-bold text-white text-center">Media Gallery</h1>
+        <p class="text-white text-xl mt-4 text-center">Capturing the movement of God through our ministries.</p>
+      </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="bg-white py-6 px-6 md:px-20">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="bg-purple-700 text-white px-4 py-2 rounded-full">All</button>
+        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Services</button>
+        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Outreach</button>
+        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Youth</button>
+        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Worship</button>
+      </div>
+    </section>
+
+    <!-- Media Grid -->
+    <section class="py-16 px-6 md:px-20 bg-gray-50">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <!-- Image Tile 1 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image1.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Sunday Worship">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Sunday Worship - March 2025</p>
+        </div>
+        <!-- Image Tile 2 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image2.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Youth Retreat">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Youth Retreat - April 2025</p>
+        </div>
+        <!-- Video Tile 1 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <div class="relative">
+            <img src="/assets/images/gallery/video1-thumb.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Worship Night Video">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/50">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <p class="text-center text-sm text-gray-600 italic mt-2">Worship Night (Video) - May 2025</p>
+        </div>
+        <!-- Image Tile 3 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image3.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Children's Ministry">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Children's Ministry - February 2025</p>
+        </div>
+        <!-- Image Tile 4 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image4.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Community Outreach">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Community Outreach - January 2025</p>
+        </div>
+        <!-- Video Tile 2 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <div class="relative">
+            <img src="/assets/images/gallery/video2-thumb.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Youth Service Video">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/50">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <p class="text-center text-sm text-gray-600 italic mt-2">Youth Service (Video) - March 2025</p>
+        </div>
+        <!-- Image Tile 5 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image5.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Baptism Sunday">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Baptism Sunday - June 2025</p>
+        </div>
+        <!-- Image Tile 6 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image6.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Men's Fellowship">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Men's Fellowship - May 2025</p>
+        </div>
+        <!-- Image Tile 7 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <img src="/assets/images/gallery/image7.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Women's Conference">
+          <p class="text-center text-sm text-gray-600 italic mt-2">Women's Conference - April 2025</p>
+        </div>
+        <!-- Video Tile 3 -->
+        <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition flex flex-col">
+          <div class="relative">
+            <img src="/assets/images/gallery/video3-thumb.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Easter Service Video">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/50">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <p class="text-center text-sm text-gray-600 italic mt-2">Easter Service (Video) - March 2025</p>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="flex justify-center mt-10">
+        <button class="px-4 py-2 mx-1 bg-gray-200 hover:bg-gray-300 rounded">Previous</button>
+        <button class="px-4 py-2 mx-1 bg-purple-700 text-white rounded hover:bg-purple-800">Next</button>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="js/components.js"></script>
+</body>
+</html> 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministries | Diet of the Word International Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              700: '#800080',
+              900: '#4B004B'
+            },
+            sky: {
+              100: '#E0F7FF',
+              600: '#039BE5',
+              700: '#0369A1'
+            },
+            pink: {
+              500: '#FFC0CB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-family: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <div id="header"></div>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[40vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/images/hero/ministries-hero.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-5xl font-bold text-white text-center">Our Ministries</h1>
+        <p class="text-white text-xl text-center mt-3">Discipling every generation, from toddlers to elders.</p>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="bg-white py-16 px-6 md:px-32 text-center">
+      <h2 class="text-3xl font-bold text-purple-800">Ministry for Every Season of Life</h2>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        At Diet of the Word International Church, we believe in nurturing faith at every stage of life. Our ministries are designed to serve, teach, and grow the body of Christ — from our youngest toddlers to our vibrant adult fellowship.
+      </p>
+    </section>
+
+    <!-- Ministries Grid -->
+    <section class="bg-purple-50 py-16 px-6 md:px-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <!-- Toddlers Ministry Card -->
+        <a href="ministries/toddlers.html" class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
+          <img src="/assets/images/ministries/toddlers.jpg" class="w-full h-48 object-cover" alt="Toddlers Ministry">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-purple-800 group-hover:text-purple-900">Toddlers Ministry</h3>
+            <p class="text-gray-600 mt-2 text-sm">Loving care and biblical foundations for ages 1–6. Safe, joyful, and nurturing.</p>
+            <span class="inline-block mt-4 text-purple-700 font-medium hover:underline">Learn more →</span>
+          </div>
+        </a>
+        <!-- Sunday School Ministry Card -->
+        <a href="ministries/sunday-school.html" class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
+          <img src="/assets/images/ministries/sunday-school.jpg" class="w-full h-48 object-cover" alt="Sunday School Ministry">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-purple-800 group-hover:text-purple-900">Sunday School</h3>
+            <p class="text-gray-600 mt-2 text-sm">Engaging Bible lessons and fun for ages 6–13. Building faith, one child at a time.</p>
+            <span class="inline-block mt-4 text-purple-700 font-medium hover:underline">Learn more →</span>
+          </div>
+        </a>
+        <!-- Teenagers Ministry Card -->
+        <a href="ministries/teenagers.html" class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
+          <img src="/assets/images/ministries/teenagers.jpg" class="w-full h-48 object-cover" alt="Teenagers Ministry">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-purple-800 group-hover:text-purple-900">Teenagers Ministry</h3>
+            <p class="text-gray-600 mt-2 text-sm">Guiding ages 13–18 through discipleship, mentorship, and real-life faith.</p>
+            <span class="inline-block mt-4 text-purple-700 font-medium hover:underline">Learn more →</span>
+          </div>
+        </a>
+        <!-- Youth Ministry Card -->
+        <a href="ministries/youth.html" class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
+          <img src="/assets/images/ministries/youth.jpg" class="w-full h-48 object-cover" alt="Youth Ministry">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-purple-800 group-hover:text-purple-900">Youth Ministry</h3>
+            <p class="text-gray-600 mt-2 text-sm">Empowering young adults (19–25) to grow spiritually, connect in fellowship, and serve boldly.</p>
+            <span class="inline-block mt-4 text-purple-700 font-medium hover:underline">Learn more →</span>
+          </div>
+        </a>
+        <!-- Adults Ministry Card -->
+        <a href="ministries/adults.html" class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
+          <img src="/assets/images/ministries/adults.jpg" class="w-full h-48 object-cover" alt="Adults Ministry">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-purple-800 group-hover:text-purple-900">Adults Ministry</h3>
+            <p class="text-gray-600 mt-2 text-sm">Fellowship, teaching, and service for ages 25+. Growing together in Christ.</p>
+            <span class="inline-block mt-4 text-purple-700 font-medium hover:underline">Learn more →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-16 text-center">
+      <h2 class="text-2xl font-bold text-purple-800">Want to Get Involved?</h2>
+      <p class="text-gray-600 mt-2">
+        We welcome you to serve in any of our ministry departments. Reach out through our contact page or speak to a ministry leader after service.
+      </p>
+      <a href="contact.html" class="inline-block mt-6 bg-purple-700 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition">Contact Us</a>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="js/components.js"></script>
+</body>
+</html> 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Requests | Diet of the Word International Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              700: '#800080',
+              900: '#4B004B'
+            },
+            sky: {
+              100: '#E0F7FF',
+              600: '#039BE5',
+              700: '#0369A1'
+            },
+            pink: {
+              500: '#FFC0CB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-family: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <div id="header"></div>
+  <main class="pt-20">
+    <!-- Hero Banner -->
+    <section class="relative min-h-[40vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/images/hero/prayer-hero.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-5xl font-bold text-white text-center">Prayer Requests</h1>
+        <p class="text-white text-xl mt-4 text-center">We are here to stand with you in prayer.</p>
+      </div>
+    </section>
+
+    <!-- Encouragement Block -->
+    <section class="bg-white py-16 px-6 md:px-20 text-center max-w-3xl mx-auto">
+      <blockquote class="italic text-gray-600 text-lg leading-relaxed border-l-4 border-purple-600 pl-4">
+        "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." — Philippians 4:6
+      </blockquote>
+      <p class="mt-4 text-gray-700">
+        Every request is read in confidence by our Bishop and trusted prayer team. We believe in the power of agreement and intercession.
+      </p>
+    </section>
+
+    <!-- Prayer Request Form -->
+    <section class="bg-purple-50 py-16 px-6 md:px-64">
+      <h2 class="text-2xl font-bold text-purple-800 text-center mb-6">Submit Your Prayer Request</h2>
+      <div class="bg-white rounded-xl shadow-md p-8 space-y-6 max-w-2xl mx-auto">
+        <form>
+          <div>
+            <label class="block text-gray-700 mb-1">Full Name (optional)</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="e.g. David Otieno" />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-1">Email (optional)</label>
+            <input type="email" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="e.g. david@example.com" />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-1">Phone (optional)</label>
+            <input type="tel" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="e.g. 07XX..." />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-1">Prayer Request <span class="text-red-600">*</span></label>
+            <textarea rows="6" required class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Type your prayer need..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-purple-700 text-white py-3 rounded hover:bg-purple-800 transition font-semibold">Send Prayer Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Privacy Note -->
+    <div class="text-sm text-gray-600 text-center mt-6 italic max-w-2xl mx-auto px-4">
+      Your request is kept strictly confidential and only accessible by the Bishop and assigned prayer team.
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/components.js"></script>
+</body>
+</html> 
